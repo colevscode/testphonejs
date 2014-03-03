@@ -24,6 +24,12 @@ AppNamespace.home = function () {
 
 $(function () {
 
+  DevExpress.devices.current({
+      phone: true,
+      version: [6,0],
+      platform: 'ios'
+  });
+
   AppNamespace.app = new DevExpress.framework.html.HtmlApplication({
       navigationType: "navbar",
       navigation: [
